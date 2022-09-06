@@ -18,6 +18,7 @@ import SVGAirbnb from '../components/atoms/company-logos/Airbnb';
 import SVGBinance from '../components/atoms/company-logos/Binance';
 import SVGCoinbase from '../components/atoms/company-logos/Coinbase';
 import SVGDropbox from '../components/atoms/company-logos/Dropbox';
+import Link from 'next/link';
 
 const Home: NextPage = () => (
   <Page>
@@ -213,12 +214,18 @@ const Home: NextPage = () => (
             ipsum orci rhoncus aliporttitor integer platea placerat.
           </Section.Description>
           <Section.Footer className="flex space-x-8">
-            <a aria-label="download on app store" href="/#app-store">
+            <Link href="/#app-store">
               <img alt="app store" width={129} src="/assets/images/download-app-store.svg" />
-            </a>
-            <a aria-label="download on google play" href="/#google-play">
+            </Link>
+            <Link href="/#app-store">
               <img alt="google play" width={144} src="/assets/images/download-google-play.svg" />
-            </a>
+            </Link>
+            {/* <a aria-label="download on app store" href="/#app-store">
+              
+            </a> */}
+            {/* <a aria-label="download on google play" href="/#google-play">
+              <img alt="google play" width={144} src="/assets/images/download-google-play.svg" />
+            </a> */}
           </Section.Footer>
         </div>
         {/* End of Column-2 */}
